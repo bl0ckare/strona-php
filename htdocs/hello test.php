@@ -3,10 +3,10 @@ use PHPUnit\Framework\TestCase;
 require_once ("hello.php");
 final class HelloTest extends TestCase
 {
-    public function testHallo(): void
+    public function testttttttHallo(): void
     {
         $input = "Mikolaj";
-        $result = hallo($input);
+        $result = hallooo($input);
         $this->assertSame($result, "Hallo, Mikolaj!");
     }
 }
