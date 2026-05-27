@@ -1,5 +1,9 @@
 <?php
-$connection = mysqli_connect("localhost", "root", "", "infocar") or die("blad polaczenia");
+$db_host = getenv('DB_HOST') ?: 'localhost';
+$db_user = getenv('DB_USER') ?: 'root';
+$db_password = getenv('DB_PASSWORD') ?: '';
+$db_database = getenv('DB_DATABASE') ?: 'infocar';
+$db_port = getenv('DB_PORT') ?: '3306';
 
 $id_zalogowanego = 1; 
 
